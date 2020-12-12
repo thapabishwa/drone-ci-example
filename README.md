@@ -34,5 +34,5 @@ The http forwarding url (http://12345.ngrok.io) will be where you, and github, a
 At time of writing, Drone's docs would say "Install Runners", point you to a menu of 6 different runner types, and tell you that the Docker Runner won't work on Mac (but it will). Foolishly, I tried using the "Exec Runner", which I couldn't get to connect to the Drone Server, write logs, or do anything. Don't mess with any of that stuff.
 
 1. Follow the Docker Runner instructions at <https://docs.drone.io/runner/docker/installation/linux/>, committing and pushing the example `.drone.yml` file to your repository.
-   If a runner is correctly connected to your server, it should look like ![drone-execution-instance](pipeline-run.png).
+   If a runner is correctly connected to your server, it should look like ![drone-execution-instance](./assets/pipeline-run.png).
    If the runner isn't connected, the "activity feed" item will be stuck in a "Pending" state.
