@@ -26,7 +26,7 @@ The http forwarding url (http://12345.ngrok.io) will be where you, and github, a
 4. Copy the Client ID and Client Secret to a file on your computer.
 5. Specify "Homepage URL": http://12345.ngrok.io
 6. Specify "Authorization callback URL": http://12345.ngrok.io/login
-7. In a tmux session called `drone-server`, finish the instructions through [Start the Server](https://docs.drone.io/server/provider/github/#start-the-server)
+7. In a new terminal session, finish the instructions through [Start the Server](https://docs.drone.io/server/provider/github/#start-the-server)
 8. **Visit http://12345.ngrok.io in your browser** and click Activate on any GitHub repo of yours.
    It should look like ![](./assets/drone-server.png)
 
