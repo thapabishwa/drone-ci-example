@@ -28,9 +28,11 @@ The http forwarding url (http://12345.ngrok.io) will be where you, and github, a
 6. Specify "Authorization callback URL": http://12345.ngrok.io/login
 7. In a new terminal session, finish the instructions through [Start the Server](https://docs.drone.io/server/provider/github/#start-the-server)
 8. **Visit http://12345.ngrok.io in your browser** and click Activate on any GitHub repo of yours.
-   It should look like ![](./assets/drone-server.png)
+   It should look like ![drone web ui home](./assets/drone-server.png)
 
 # Executing Build/Test/Deploy Instructions with Runners
 At time of writing, Drone's docs would say "Install Runners", point you to a menu of 6 different runner types, and tell you that the Docker Runner won't work on Mac (but it will). Foolishly, I tried using the "Exec Runner", which I couldn't get to connect to the Drone Server, write logs, or do anything. Don't mess with any of that stuff.
 
-1. Follow the Docker Runner instructions at <https://docs.drone.io/runner/docker/installation/linux/>.
+1. Follow the Docker Runner instructions at <https://docs.drone.io/runner/docker/installation/linux/>, committing and pushing the example `.drone.yml` file to your repository.
+   If a runner is correctly connected to your server, it should look like ![drone-execution-instance](pipeline-run.png).
+   If the runner isn't connected, the "activity feed" item will be stuck in a "Pending" state.
